@@ -15,6 +15,7 @@ import MonthlyGivingSetup from "@/components/MonthlyGivingSetup";
 import DescriptionAccordion from "@/components/DescriptionAccordion";
 import WalletAddressQRCode from "@/components/WalletAddressQRCode";
 import ProjectProgressBar from "@/components/ProjectProgressBar";
+import ProjectImage from "@/components/ProjectImage";
 import {
   fetchProject,
   fetchProjectUpdates,
@@ -823,7 +824,7 @@ export default function ProjectDetail({
 
       <Link
         href="/projects"
-        className="inline-flex items-center gap-1 text-sm text-[#4f6f4f] dark:text-[#8aaa8a] hover:text-forest-700 transition-colors mb-6 font-body"
+        className="inline-flex items-center gap-1 text-sm text-[#4f6f4f] dark:text-forest-400 hover:text-forest-700 transition-colors mb-6 font-body"
       >
         ← Back to Projects
       </Link>
@@ -921,9 +922,10 @@ export default function ProjectDetail({
           <div className="card">
             {project.imageUrl ? (
               <div className="mb-5 overflow-hidden rounded-3xl border border-forest-100 bg-forest-50">
-                <img
+                <ProjectImage
                   src={project.imageUrl}
-                  alt={project.name}
+                  name={project.name}
+                  description={project.description}
                   className="h-56 w-full object-cover"
                 />
               </div>
@@ -1013,7 +1015,7 @@ export default function ProjectDetail({
                   {project.name}
                 </h1>
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1">
-                  <p className="text-[#4f6f4f] dark:text-[#8aaa8a] text-sm font-body">
+                  <p className="text-[#4f6f4f] dark:text-forest-400 text-sm font-body">
                     📍 {project.location}
                   </p>
                   {(project.averageRating || 0) > 0 && (
@@ -1227,7 +1229,7 @@ export default function ProjectDetail({
                   {project.aiSummary}
                 </p>
               ) : (
-                <p className="text-sm text-[#4f6f4f] dark:text-[#8aaa8a] italic font-body">
+                <p className="text-sm text-[#4f6f4f] dark:text-forest-400 italic font-body">
                   No AI summary yet. Click &ldquo;Generate summary&rdquo; to create one for donors.
                 </p>
               )}
@@ -1327,7 +1329,7 @@ export default function ProjectDetail({
                         Completed
                       </span>
                     </div>
-                    <p className="text-xs text-[#4f6f4f] dark:text-[#8aaa8a] font-body mb-2">
+                    <p className="text-xs text-[#4f6f4f] dark:text-forest-400 font-body mb-2">
                       Ended {new Date(campaign.deadline).toLocaleDateString()}
                     </p>
                     <div className="flex justify-between text-xs mb-1 font-body">
@@ -1355,7 +1357,7 @@ export default function ProjectDetail({
             <h2 className="font-display text-lg font-semibold text-forest-900 mb-2">
               Campaign Creator
             </h2>
-            <p className="text-xs text-[#4f6f4f] dark:text-[#8aaa8a] font-body mb-4">
+            <p className="text-xs text-[#4f6f4f] dark:text-forest-400 font-body mb-4">
               Project admins can launch a time-limited campaign with a custom
               goal and deadline.
             </p>
@@ -1439,7 +1441,7 @@ export default function ProjectDetail({
               {t("project.projectUpdates")}
             </h2>
             {updates.length === 0 ? (
-              <p className="text-sm text-[#4f6f4f] dark:text-[#8aaa8a] font-body">{t("project.noUpdatesYet")}</p>
+              <p className="text-sm text-[#4f6f4f] dark:text-forest-400 font-body">{t("project.noUpdatesYet")}</p>
             ) : (
               <div className="space-y-4">
                 {updates.map((u) => {
@@ -1458,7 +1460,7 @@ export default function ProjectDetail({
                         </span>
                       </div>
                       <div
-                        className="text-[#4f6f4f] dark:text-[#8aaa8a] text-sm leading-relaxed font-body prose prose-sm max-w-none"
+                        className="text-[#4f6f4f] dark:text-forest-400 text-sm leading-relaxed font-body prose prose-sm max-w-none"
                         dangerouslySetInnerHTML={{ __html: renderMarkdown(u.body) }}
                       />
                       <div className="flex items-center gap-3 mt-2">
@@ -1517,14 +1519,14 @@ export default function ProjectDetail({
               </h2>
               <span className="text-xs text-[#4f6f4f] dark:text-forest-300 font-body">On-chain memos</span>
             </div>
-            <p className="text-xs text-[#4f6f4f] dark:text-[#8aaa8a] font-body mb-4">
+            <p className="text-xs text-[#4f6f4f] dark:text-forest-400 font-body mb-4">
               Discuss by donating — messages are Stellar transaction memos from real donations.
             </p>
 
             {discussionLoading ? (
-              <p className="text-sm text-[#4f6f4f] dark:text-[#8aaa8a] font-body">Loading discussion…</p>
+              <p className="text-sm text-[#4f6f4f] dark:text-forest-400 font-body">Loading discussion…</p>
             ) : discussion.length === 0 ? (
-              <p className="text-sm text-[#4f6f4f] dark:text-[#8aaa8a] font-body">
+              <p className="text-sm text-[#4f6f4f] dark:text-forest-400 font-body">
                 No memo messages yet. Be the first to leave a message with your donation.
               </p>
             ) : (
@@ -1588,7 +1590,7 @@ export default function ProjectDetail({
           {/* Impact Calculator */}
           <div className="card bg-forest-50 border-forest-200">
             <h3 className="font-display font-semibold text-forest-900 mb-2">Impact Calculator</h3>
-            <p className="text-xs text-[#4f6f4f] dark:text-[#8aaa8a] mb-3 font-body">See what your donation can achieve before you give.</p>
+            <p className="text-xs text-[#4f6f4f] dark:text-forest-400 mb-3 font-body">See what your donation can achieve before you give.</p>
             
             <div className="flex flex-wrap gap-2 mb-3">
               {["10", "25", "50", "100", "250"].map(p => (
@@ -1662,7 +1664,7 @@ export default function ProjectDetail({
             </div>
           ) : (
             <div>
-              <p className="text-center text-[#4f6f4f] dark:text-[#8aaa8a] text-sm mb-4 font-body">
+              <p className="text-center text-[#4f6f4f] dark:text-forest-400 text-sm mb-4 font-body">
                 Connect your wallet to donate
               </p>
               <WalletConnect onConnect={onConnect} />
@@ -1672,7 +1674,7 @@ export default function ProjectDetail({
           {/* Share card */}
           <div className="card text-center bg-forest-50 border-forest-200">
             <p className="font-display font-semibold text-forest-900 mb-2">Spread the word 🌍</p>
-            <p className="text-xs text-[#4f6f4f] dark:text-[#8aaa8a] mb-3 font-body">Share this project with friends and family to increase its impact.</p>
+            <p className="text-xs text-[#4f6f4f] dark:text-forest-400 mb-3 font-body">Share this project with friends and family to increase its impact.</p>
             
             <div className="grid grid-cols-3 gap-2 mb-3">
               <button
@@ -1717,7 +1719,7 @@ export default function ProjectDetail({
             <p className="font-display font-semibold text-forest-900 mb-2">
               Impact Report 📊
             </p>
-            <p className="text-xs text-[#4f6f4f] dark:text-[#8aaa8a] mb-3 font-body">
+            <p className="text-xs text-[#4f6f4f] dark:text-forest-400 mb-3 font-body">
               Download a print-friendly summary of this project&apos;s progress and
               impact.
             </p>
@@ -1734,7 +1736,7 @@ export default function ProjectDetail({
             <p className="font-display font-semibold text-forest-900 mb-1">
               Get project updates 🔔
             </p>
-            <p className="text-xs text-[#4f6f4f] dark:text-[#8aaa8a] mb-3 font-body">
+            <p className="text-xs text-[#4f6f4f] dark:text-forest-400 mb-3 font-body">
               Receive an email when this project posts new updates.
             </p>
             {subscriberCount !== null && (
