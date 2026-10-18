@@ -133,7 +133,7 @@ describe("MonthlyGivingSetup", () => {
       name: "Confirm monthly giving",
     });
     expect(dialog).toBeInTheDocument();
-    expect(within(dialog).getByText(/40 XLM/)).toBeInTheDocument();
+    expect(within(dialog).getByText(/40\.00 XLM/)).toBeInTheDocument();
     expect(within(dialog).getByText("6 months")).toBeInTheDocument();
     expect(within(dialog).getByText("Next charge")).toBeInTheDocument();
 
@@ -276,7 +276,7 @@ describe("MonthlyGivingSetup", () => {
 
     renderSetup();
 
-    expect(screen.getByText(/25 XLM monthly/)).toBeInTheDocument();
+    expect(screen.getByText(/25\.00 XLM monthly/)).toBeInTheDocument();
     expect(screen.queryByText(/other-project/)).not.toBeInTheDocument();
     expect(screen.getAllByText(/No paid months yet/)).toHaveLength(1);
   });
