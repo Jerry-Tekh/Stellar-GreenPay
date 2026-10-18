@@ -65,7 +65,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: EarthGuardian 1
           <p
             class="font-display text-2xl font-semibold text-[#227239]"
           >
-            1,000 XLM
+            1,000.00 XLM
           </p>
         </div>
         <div
@@ -193,7 +193,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: EarthGuardian 1
               <span
                 class="font-semibold text-[#227239] font-body text-sm"
               >
-                100 XLM
+                100.00 XLM
               </span>
               <span
                 class="text-[10px] text-[var(--text-secondary)] dark:text-[#8aaa8a]"
@@ -284,7 +284,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: Forest 1`] = `
           <p
             class="font-display text-2xl font-semibold text-[#227239]"
           >
-            1,000 XLM
+            1,000.00 XLM
           </p>
         </div>
         <div
@@ -412,7 +412,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: Forest 1`] = `
               <span
                 class="font-semibold text-[#227239] font-body text-sm"
               >
-                100 XLM
+                100.00 XLM
               </span>
               <span
                 class="text-[10px] text-[var(--text-secondary)] dark:text-[#8aaa8a]"
@@ -503,7 +503,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: None 1`] = `
           <p
             class="font-display text-2xl font-semibold text-[#227239]"
           >
-            1,000 XLM
+            1,000.00 XLM
           </p>
         </div>
         <div
@@ -576,7 +576,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: None 1`] = `
               <span
                 class="font-semibold text-[#227239] font-body text-sm"
               >
-                100 XLM
+                100.00 XLM
               </span>
               <span
                 class="text-[10px] text-[var(--text-secondary)] dark:text-[#8aaa8a]"
@@ -667,7 +667,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: Seedling 1`] = 
           <p
             class="font-display text-2xl font-semibold text-[#227239]"
           >
-            1,000 XLM
+            1,000.00 XLM
           </p>
         </div>
         <div
@@ -795,7 +795,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: Seedling 1`] = 
               <span
                 class="font-semibold text-[#227239] font-body text-sm"
               >
-                100 XLM
+                100.00 XLM
               </span>
               <span
                 class="text-[10px] text-[var(--text-secondary)] dark:text-[#8aaa8a]"
@@ -886,7 +886,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: Tree 1`] = `
           <p
             class="font-display text-2xl font-semibold text-[#227239]"
           >
-            1,000 XLM
+            1,000.00 XLM
           </p>
         </div>
         <div
@@ -1014,7 +1014,7 @@ exports[`DonorProfile Component matches snapshot for badge tier: Tree 1`] = `
               <span
                 class="font-semibold text-[#227239] font-body text-sm"
               >
-                100 XLM
+                100.00 XLM
               </span>
               <span
                 class="text-[10px] text-[var(--text-secondary)] dark:text-[#8aaa8a]"

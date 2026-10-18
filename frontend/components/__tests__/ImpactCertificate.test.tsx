@@ -34,7 +34,7 @@ describe("ImpactCertificate", () => {
   it("renders the donor name and key impact stats", () => {
     render(<ImpactCertificate {...baseProps} />);
     expect(screen.getByText("Jane Doe")).toBeInTheDocument();
-    expect(screen.getByText("1,500 XLM")).toBeInTheDocument();
+    expect(screen.getByText("1,500.00 XLM")).toBeInTheDocument();
     expect(screen.getByText("Forest")).toBeInTheDocument();
     expect(screen.getByText("Amazon Reforestation")).toBeInTheDocument();
   });
