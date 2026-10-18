@@ -3,6 +3,14 @@
 @import "tailwindcss";
 @config "../tailwind.config.ts";
 
+/* Ensure WCAG AA contrast ratios in light theme */
+.text-forest-500 { color: #1d5e31; }
+.text-forest-600 { color: #1a5a2c; }
+.text-forest-700 { color: #144521; }
+.text-forest-800 { color: #0e3018; }
+.text-forest-900 { color: #081a0c; }
+
+
 @layer base {
   /* ── Light theme (default) ───────────────────────────────────────── */
   :root {

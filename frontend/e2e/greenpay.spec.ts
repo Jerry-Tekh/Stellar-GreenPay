@@ -193,7 +193,7 @@ test.describe("Project detail & DonateForm", () => {
     await form.getByRole("button", { name: /Donate/ }).click();
 
     await expect(page.getByRole("heading", { name: /transaction confirmed/i })).toBeVisible();
-    await expect(page.locator(".card", { hasText: /transaction confirmed/i })).toContainText("10 XLM");
+    await expect(page.locator(".card", { hasText: /transaction confirmed/i })).toContainText("10.00 XLM");
   });
 
   test.describe("with a connected (mocked) Freighter wallet", () => {
