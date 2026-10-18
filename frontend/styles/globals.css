@@ -453,16 +453,16 @@
 .dark .bg-forest-200 { background-color: #1a3a1a; }
 
 /* Text colors */
-.dark .text-forest-50  { color: #e8f3e8; }
-.dark .text-forest-100 { color: #6a8a6a; }
-.dark .text-forest-200 { color: #aac0aa; }
-.dark .text-forest-300 { color: #8aaa8a; }
-.dark .text-forest-400 { color: #6a8a6a; }
-.dark .text-forest-500 { color: #4caf70; }
-.dark .text-forest-600 { color: #4caf70; }
-.dark .text-forest-700 { color: #66bb6a; }
-.dark .text-forest-800 { color: #81c784; }
-.dark .text-forest-900 { color: #c8dfc8; }
+.dark .text-forest-50 { color: #e8f3e8 !important; }
+.dark .text-forest-100 { color: #6a8a6a !important; }
+.dark .text-forest-200 { color: #aac0aa !important; }
+.dark .text-forest-300 { color: #8aaa8a !important; }
+.dark .text-forest-400 { color: #6a8a6a !important; }
+.dark .text-forest-500 { color: #4caf70 !important; }
+.dark .text-forest-600 { color: #4caf70 !important; }
+.dark .text-forest-700 { color: #66bb6a !important; }
+.dark .text-forest-800 { color: #81c784 !important; }
+.dark .text-forest-900 { color: #c8dfc8 !important; }
 
 /* Dark-mode text contrast fixes for WCAG AA (4.5:1 normal text) */
 .dark .text-zinc-600 { color: #a8a29e; }
