@@ -115,7 +115,7 @@ describe("DonationFeed live stream", () => {
       });
     });
 
-    expect(screen.getByText("30 XLM")).toBeInTheDocument();
+    expect(screen.getByText("30.00 XLM")).toBeInTheDocument();
     expect(screen.getAllByText("View tx ↗")).toHaveLength(3);
   });
 

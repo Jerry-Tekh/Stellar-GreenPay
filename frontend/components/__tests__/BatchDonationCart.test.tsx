@@ -106,7 +106,7 @@ describe("BatchDonationCart", () => {
 
     expect(screen.getByRole("button", { name: /remove forest restoration/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /remove solar for schools/i })).toBeInTheDocument();
-    expect(screen.getByText("30 XLM")).toBeInTheDocument();
+    expect(screen.getByText("30.00 XLM")).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: /remove forest restoration/i }));
 
@@ -123,7 +123,7 @@ describe("BatchDonationCart", () => {
     expect(screen.getByRole("heading", { name: "Donation Cart (1/10)" })).toBeInTheDocument();
     expect(screen.getByRole("spinbutton", { name: /donation amount for forest restoration/i }))
       .toHaveValue(20);
-    expect(screen.getByText("20 XLM")).toBeInTheDocument();
+    expect(screen.getByText("20.00 XLM")).toBeInTheDocument();
   });
 
   it("recomputes the total when an item's amount is edited", () => {
@@ -136,8 +136,8 @@ describe("BatchDonationCart", () => {
       { target: { value: "35" } },
     );
 
-    expect(screen.getByText("40 XLM")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /donate all \(40 xlm\)/i })).toBeInTheDocument();
+    expect(screen.getByText("40.00 XLM")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /donate all \(40\.00 xlm\)/i }));
   });
 
   it("builds, signs, and submits one payment per cart item at checkout", async () => {
