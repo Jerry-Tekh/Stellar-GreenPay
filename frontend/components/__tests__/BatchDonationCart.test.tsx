@@ -112,7 +112,7 @@ describe("BatchDonationCart", () => {
 
     expect(screen.queryByRole("button", { name: /remove forest restoration/i })).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: /remove solar for schools/i })).toBeInTheDocument();
-    expect(screen.getByText("5 XLM")).toBeInTheDocument();
+    expect(screen.getByText("5.00 XLM")).toBeInTheDocument();
   });
 
   it("updates the existing entry instead of adding a duplicate project", () => {
