@@ -112,7 +112,7 @@ export default function LeaderboardTable({ limit = 20, period = "all" }: { limit
 
   if (entries.length === 0) return (
     <div className="text-center py-12">
-      <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-4">
+      <p className="text-[var(--text-secondary)] dark:text-[#1a5a2c] font-body mb-4">
         🌱 No donations yet — be the first donor on the leaderboard!
       </p>
       <Link href="/projects" className="btn-primary">
@@ -140,7 +140,7 @@ export default function LeaderboardTable({ limit = 20, period = "all" }: { limit
             <div className="w-8 text-center flex-shrink-0">
               {entry.rank <= 3
                 ? <span className="text-lg">{medals[entry.rank - 1]}</span>
-                : <span className="text-sm font-semibold text-[#8aaa8a] dark:text-forest-300 font-body">#{entry.rank}</span>
+                : <span className="text-sm font-semibold text-[#1a5a2c] dark:text-forest-300 font-body">#{entry.rank}</span>
               }
             </div>
 
@@ -158,7 +158,7 @@ export default function LeaderboardTable({ limit = 20, period = "all" }: { limit
                 <span className="font-semibold text-forest-900 group-hover:text-forest-600 transition-colors text-sm font-body block truncate">
                   {nameOrAddress}
                 </span>
-                <p className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body mt-0.5">
+                <p className="text-xs text-[#1a5a2c] dark:text-forest-300 font-body mt-0.5">
                   {entry.projectsSupported} project{entry.projectsSupported !== 1 ? "s" : ""} supported
                 </p>
               </div>
@@ -171,17 +171,17 @@ export default function LeaderboardTable({ limit = 20, period = "all" }: { limit
                   {formatXLM(entry.totalDonatedXLM)}
                 </p>
                 {formatUSDEquivalent(entry.totalDonatedXLM, xlmUsd) && (
-                  <p className="text-[11px] text-[#8aaa8a] dark:text-forest-300 font-body">
+                  <p className="text-[11px] text-[#1a5a2c] dark:text-forest-300 font-body">
                     {formatUSDEquivalent(entry.totalDonatedXLM, xlmUsd)}
                   </p>
                 )}
-                <p className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body">donated</p>
+                <p className="text-xs text-[#1a5a2c] dark:text-forest-300 font-body">donated</p>
               </div>
               <div>
                 <p className="font-mono font-semibold text-forest-600 text-sm">
                   {formatCO2(Number(entry.totalCO2OffsetKg || 0))}
                 </p>
-                <p className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body mt-auto">offset</p>
+                <p className="text-xs text-[#1a5a2c] dark:text-forest-300 font-body mt-auto">offset</p>
               </div>
             </div>
           </Link>

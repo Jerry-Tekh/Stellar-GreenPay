@@ -88,7 +88,7 @@ const DonationQRCode = React.forwardRef<DonationQRCodeHandle, DonationQRCodeProp
     return (
       <div
         ref={onCanvasRef}
-        className="donation-qr-wrapper"
+        className="donation-qr-wrapper" role="img"
         style={{ display: "inline-block", textAlign: "center" }}
         aria-label={`QR code to donate to ${projectName}`}
       >
@@ -98,6 +98,7 @@ const DonationQRCode = React.forwardRef<DonationQRCodeHandle, DonationQRCodeProp
             size={size}
             level="H"
             includeMargin={true}
+            aria-label={`QR code to donate to ${projectName}`}
             imageSettings={{
               src: "/logo-mark.png",
               height: Math.round(size * 0.18),
