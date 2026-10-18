@@ -51,6 +51,7 @@ export default function CircularProgress({
         />
         {/* Colored arc */}
         <circle
+          data-testid="circular-progress-bar"
           className={`${colorClass} stroke-current transition-all ease-out duration-1000 motion-reduce:transition-none`}
           strokeWidth={strokeWidth}
           strokeLinecap="round"
