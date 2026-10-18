@@ -44,7 +44,7 @@ export function formatAmount(
 export function formatXLM(amount: string | number, decimals = 2, locale?: string): string {
   const n = typeof amount === "string" ? parseFloat(amount) : amount;
   if (isNaN(n)) return "0 XLM";
-  return `${formatAmount(n, decimals, locale, n % 1 === 0 ? 0 : decimals)} XLM`;
+  return `${formatAmount(n, decimals, locale, decimals)} XLM`;
 }
 
 /**
