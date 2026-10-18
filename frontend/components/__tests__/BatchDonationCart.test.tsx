@@ -152,7 +152,7 @@ describe("BatchDonationCart", () => {
     fireEvent.click(screen.getByRole("button", { name: /open donation cart/i }));
     addProject("Forest Restoration", "12");
     addProject("Solar for Schools", "8");
-    fireEvent.click(screen.getByRole("button", { name: /donate all \(20 xlm\)/i }));
+    fireEvent.click(screen.getByRole("button", { name: /donate all \(20\.00 XLM\)/i }));
 
     await waitFor(() => {
       expect(mockBuildBatchDonation).toHaveBeenCalledWith({

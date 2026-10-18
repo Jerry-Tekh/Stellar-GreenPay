@@ -73,7 +73,7 @@ exports[`ImpactCertificate matches snapshot 1`] = `
           <p
             class="font-display font-bold text-forest-900 text-lg"
           >
-            1,500 XLM
+            1,500.00 XLM
           </p>
           <p
             class="text-xs text-[var(--text-tertiary)] dark:text-forest-300 mt-1 font-body uppercase tracking-wider font-bold opacity-60"
