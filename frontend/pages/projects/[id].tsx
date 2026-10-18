@@ -15,7 +15,8 @@ import MonthlyGivingSetup from "@/components/MonthlyGivingSetup";
 import DescriptionAccordion from "@/components/DescriptionAccordion";
 import WalletAddressQRCode from "@/components/WalletAddressQRCode";
 import ProjectProgressBar from "@/components/ProjectProgressBar";
-import ProjectImage from "@/components/ProjectImage";
+import ProjectImage from '@/components/ProjectImage';
+import ProjectHeadMeta from '@/components/ProjectHeadMeta';
 import {
   fetchProject,
   fetchProjectUpdates,
