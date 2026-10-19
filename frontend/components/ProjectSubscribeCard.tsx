@@ -49,7 +49,7 @@ export default function ProjectSubscribeCard({
       <p className="font-display font-semibold text-forest-900 mb-1">
         Get project updates 🔔
       </p>
-      <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] mb-3 font-body">
+      <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 mb-3 font-body">
         Receive an email when this project posts new updates.
       </p>
       {subscriberCount !== null && (

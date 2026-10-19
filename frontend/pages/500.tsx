@@ -17,7 +17,7 @@ export default function ServerError() {
         <h1 className="font-body text-lg sm:text-xl text-[#1a2e1a] dark:text-[#d5e8d5] font-medium mb-2">
           {t("common.serverErrorTitle")}
         </h1>
-        <p className="font-body text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] mb-10 max-w-sm">
+        <p className="font-body text-sm text-[var(--text-secondary)] dark:text-forest-300 mb-10 max-w-sm">
           {t("common.serverErrorDescription")}
         </p>
 

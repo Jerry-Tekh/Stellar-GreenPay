@@ -165,7 +165,7 @@ export default function ProjectComments({ projectId, publicKey }: ProjectComment
       ) : loadError ? (
         <p className="text-sm text-red-600 font-body">{loadError}</p>
       ) : comments.length === 0 ? (
-        <p className="text-sm text-[#4f6f4f] dark:text-[#8aaa8a] font-body">
+        <p className="text-sm text-[#4f6f4f] dark:text-forest-300 font-body">
           No comments yet. Donors can start the conversation.
         </p>
       ) : (
@@ -178,7 +178,7 @@ export default function ProjectComments({ projectId, publicKey }: ProjectComment
                     {c.authorDisplayName || shortenAddress(c.authorAddress)}
                   </span>
                   <div className="flex items-center gap-3">
-                    <time dateTime={c.createdAt} className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body">
+                    <time dateTime={c.createdAt} className="text-xs text-forest-300 font-body">
                       {timeAgo(c.createdAt)}
                     </time>
                     {publicKey && publicKey === c.authorAddress && (

@@ -73,7 +73,7 @@ export default function ComparePage() {
           <h2 className="font-display text-xl font-semibold text-forest-900 mb-2">
             Could not load projects
           </h2>
-          <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm font-body mb-6">
+          <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm font-body mb-6">
             {error}
           </p>
           <Link
@@ -98,7 +98,7 @@ export default function ComparePage() {
           <h2 className="font-display text-xl font-semibold text-forest-900 mb-2">
             Compare Projects
           </h2>
-          <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm font-body mb-4">
+          <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm font-body mb-4">
             Add project IDs to the URL to compare them side by side.
           </p>
           <p className="text-xs text-[var(--text-tertiary)] dark:text-forest-300 font-mono bg-forest-50 rounded-lg p-3 inline-block">
@@ -152,7 +152,7 @@ export default function ComparePage() {
 
       <Link
         href="/projects"
-        className="inline-flex items-center gap-1 text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] hover:text-forest-700 transition-colors mb-6 font-body"
+        className="inline-flex items-center gap-1 text-sm text-[var(--text-secondary)] dark:text-forest-300 hover:text-forest-700 transition-colors mb-6 font-body"
       >
         ← Back to Projects
       </Link>

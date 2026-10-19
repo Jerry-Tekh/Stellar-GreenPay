@@ -72,7 +72,7 @@ export default function AdminAnalytics({ publicKey, onConnect }: AdminAnalyticsP
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
         <div className="text-center mb-10">
           <h1 className="font-display text-3xl font-bold text-forest-900 mb-3">Admin Analytics</h1>
-          <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">Connect your wallet to view analytics.</p>
+          <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body">Connect your wallet to view analytics.</p>
         </div>
         <WalletConnect onConnect={onConnect} />
       </div>
@@ -84,7 +84,7 @@ export default function AdminAnalytics({ publicKey, onConnect }: AdminAnalyticsP
       <div className="mb-8">
         <p className="text-xs tracking-[0.22em] uppercase text-[var(--text-tertiary)] dark:text-forest-300 font-body">Admin</p>
         <h1 className="font-display text-3xl font-bold text-forest-900 mb-1">Analytics Dashboard</h1>
-        <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+        <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
           Donations and project statistics by category.
         </p>
       </div>
@@ -105,7 +105,7 @@ export default function AdminAnalytics({ publicKey, onConnect }: AdminAnalyticsP
         <div className="space-y-6">
           <section className="card">
             <h2 className="font-display text-xl font-bold text-forest-900 mb-1">Weekly Donation Volume</h2>
-            <p className="text-sm text-[#5a7a5a] dark:text-[#8aaa8a] mb-4">Total XLM received each week</p>
+            <p className="text-sm text-[#5a7a5a] dark:text-forest-300 mb-4">Total XLM received each week</p>
             <div className="h-72">
               <DonationGrowthChartNoSSR />
             </div>

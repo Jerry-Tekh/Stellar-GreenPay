@@ -57,7 +57,7 @@ export default function ProjectAiSummary({
           {project.aiSummary}
         </p>
       ) : (
-        <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] italic font-body">
+        <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 italic font-body">
           No AI summary yet. Click &ldquo;Generate summary&rdquo; to create one for donors.
         </p>
       )}

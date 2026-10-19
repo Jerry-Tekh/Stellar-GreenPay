@@ -106,7 +106,7 @@ export default function ToastNotification({
                 className={`text-xs mt-0.5 font-body ${
                   isError
                     ? "text-red-700 dark:text-red-300"
-                    : "text-[var(--text-secondary)] dark:text-[#8aaa8a]"
+                    : "text-[var(--text-secondary)] dark:text-forest-300"
                 }`}
               >
                 {t.description}

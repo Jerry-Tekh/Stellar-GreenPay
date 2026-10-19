@@ -141,7 +141,7 @@ export default function JobDetailPage({ publicKey, onConnect }: JobPageProps) {
 
   if (!router.isReady || loading) {
     return (
-      <div className="max-w-3xl mx-auto px-4 py-16 text-center text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+      <div className="max-w-3xl mx-auto px-4 py-16 text-center text-[var(--text-secondary)] dark:text-forest-300 font-body">
         Loading job…
       </div>
     );
@@ -175,7 +175,7 @@ export default function JobDetailPage({ publicKey, onConnect }: JobPageProps) {
         <h1 className="font-display text-2xl font-bold text-forest-900 mb-2">
           {job.title}
         </h1>
-        <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body whitespace-pre-wrap mb-6">
+        <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body whitespace-pre-wrap mb-6">
           {job.description}
         </p>
 
@@ -222,7 +222,7 @@ export default function JobDetailPage({ publicKey, onConnect }: JobPageProps) {
         )}
 
         {publicKey && !isClient && job.status === "in_escrow" && (
-          <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-4">
+          <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body mb-4">
             Connected as {shortenAddress(publicKey)}. Only the client wallet can
             release this escrow.
           </p>
@@ -262,7 +262,7 @@ export default function JobDetailPage({ publicKey, onConnect }: JobPageProps) {
             </button>
 
             {step === "signing" && (
-              <p className="text-center text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] animate-pulse motion-reduce:animate-none font-body">
+              <p className="text-center text-xs text-[var(--text-secondary)] dark:text-forest-300 animate-pulse motion-reduce:animate-none font-body">
                 Confirm the transaction in Freighter…
               </p>
             )}
@@ -297,7 +297,7 @@ export default function JobDetailPage({ publicKey, onConnect }: JobPageProps) {
         )}
 
         {job.status === "completed" && !job.releaseTransactionHash && (
-          <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] mt-4 font-body">
+          <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 mt-4 font-body">
             This job is marked completed.
           </p>
         )}

@@ -401,7 +401,7 @@ export default function DonateForm({ project, publicKey, initialAmount, initialM
       <div className="card text-center animate-slide-up motion-reduce:animate-none">
         <div className="text-4xl mb-3">🌱</div>
         <h3 className="font-display text-xl font-semibold text-forest-900 mb-2">Transaction confirmed!</h3>
-        <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm mb-4 font-body">
+        <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm mb-4 font-body">
           Your donation of <span className="font-semibold text-forest-700">{currency === "XLM" ? formatXLM(amountNum) : `${formatAmount(amountNum)} ${currency}`}</span>
           {fiatEquivalent && (
             <span data-testid="receipt-fiat-equivalent" className="text-forest-600 dark:text-forest-400 font-medium"> ({fiatEquivalent})</span>
@@ -426,7 +426,7 @@ export default function DonateForm({ project, publicKey, initialAmount, initialM
   return (
     <div className="card animate-fade-in motion-reduce:animate-none">
       <h3 className="font-display text-lg font-semibold text-forest-900 mb-1">Make a Donation</h3>
-          <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm mb-5 font-body">100% goes directly to the project wallet.</p>
+          <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm mb-5 font-body">100% goes directly to the project wallet.</p>
 
       <div className="space-y-4">
         {/* Currency selector */}
@@ -606,20 +606,20 @@ export default function DonateForm({ project, publicKey, initialAmount, initialM
           <button
             type="button"
             onClick={handleCancel}
-            className="w-full text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body underline"
+            className="w-full text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body underline"
           >
             Cancel
           </button>
         )}
 
         {(step === "building" || step === "signing") && (
-          <p className="text-center text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] animate-pulse motion-reduce:animate-none font-body">
+          <p className="text-center text-xs text-[var(--text-secondary)] dark:text-forest-300 animate-pulse motion-reduce:animate-none font-body">
             Signing with Freighter… Please confirm in your Freighter wallet.
           </p>
         )}
 
         {(step === "submitting" || step === "recording") && (
-          <p className="text-center text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] animate-pulse motion-reduce:animate-none font-body">
+          <p className="text-center text-xs text-[var(--text-secondary)] dark:text-forest-300 animate-pulse motion-reduce:animate-none font-body">
             Submitting to Stellar network…
           </p>
         )}

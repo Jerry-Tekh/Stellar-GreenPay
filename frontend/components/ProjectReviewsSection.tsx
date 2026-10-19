@@ -37,7 +37,7 @@ export default function ProjectReviewsSection({
             <span className="font-bold text-forest-900 font-body">
               {averageRating.toFixed(1)}
             </span>
-            <span className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body">
+            <span className="text-xs text-forest-300 font-body">
               ({ratingCount} review{ratingCount === 1 ? "" : "s"})
             </span>
           </div>
@@ -54,7 +54,7 @@ export default function ProjectReviewsSection({
           ))}
         </div>
       ) : reviews.length === 0 ? (
-        <p className="text-sm text-[#4f6f4f] dark:text-[#8aaa8a] font-body">
+        <p className="text-sm text-[#4f6f4f] dark:text-forest-300 font-body">
           No reviews yet. Donate to this project and be the first to share your experience.
         </p>
       ) : (
@@ -80,7 +80,7 @@ export default function ProjectReviewsSection({
                       {shortenAddress(r.donorAddress)}
                     </span>
                   </div>
-                  <span className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body">
+                  <span className="text-xs text-forest-300 font-body">
                     {timeAgo(r.createdAt)}
                   </span>
                 </div>

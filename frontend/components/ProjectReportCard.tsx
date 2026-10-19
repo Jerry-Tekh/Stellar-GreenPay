@@ -10,7 +10,7 @@ export default function ProjectReportCard({ onDownloadReport }: ProjectReportCar
       <p className="font-display font-semibold text-forest-900 mb-2">
         Impact Report 📊
       </p>
-      <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] mb-3 font-body">
+      <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 mb-3 font-body">
         Download a print-friendly summary of this project&apos;s progress and impact.
       </p>
       <button

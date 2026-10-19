@@ -225,10 +225,10 @@ export default function SubmitProjectPage() {
         <h1 className="font-display text-3xl font-bold text-forest-900 mb-3">
           Project Submitted!
         </h1>
-        <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-2">
+        <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body mb-2">
           Thank you for submitting <strong>{form.projectName}</strong>.
         </p>
-        <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-8">
+        <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body mb-8">
           Our team will review your submission within{" "}
           <strong>{reviewTimeline || "5–10 business days"}</strong>. We&apos;ll contact you at{" "}
           <strong>{form.contactEmail}</strong> with the outcome.
@@ -245,7 +245,7 @@ export default function SubmitProjectPage() {
       <h1 className="font-display text-3xl font-bold text-forest-900 mb-2">
         Submit Your Project
       </h1>
-      <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-8 text-sm">
+      <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body mb-8 text-sm">
         Organizations can submit climate projects for verification and funding on Stellar GreenPay.
       </p>
 
@@ -333,7 +333,7 @@ export default function SubmitProjectPage() {
         {step === "wallet" && (
           <>
             <h2 className="font-display text-xl font-bold text-forest-900">Stellar Wallet</h2>
-            <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+            <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
               Donations will be sent directly to this Stellar address. Make sure you control it.
             </p>
             <Field label="Stellar Wallet Address *" error={fieldErrors.walletAddress}>
@@ -355,7 +355,7 @@ export default function SubmitProjectPage() {
         {step === "methodology" && (
           <>
             <h2 className="font-display text-xl font-bold text-forest-900">CO₂ Methodology</h2>
-            <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+            <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
               Tell us how your project measures and verifies carbon reduction.
             </p>
             <Field label="Methodology Name *" error={fieldErrors.co2MethodologyName}>

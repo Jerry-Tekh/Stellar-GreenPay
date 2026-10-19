@@ -128,7 +128,7 @@ export default function ProjectHero({
             {project.name}
           </h1>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1">
-            <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm font-body">
+            <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm font-body">
               📍 {project.location}
             </p>
             {(project.averageRating || 0) > 0 && (

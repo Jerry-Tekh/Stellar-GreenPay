@@ -215,7 +215,7 @@ export default function Home({ publicKey, onConnect }: HomeProps) {
             </span>
           </h1>
 
-          <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-body">
+          <p className="text-[var(--text-secondary)] dark:text-forest-300 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-body">
             Stellar GreenPay connects donors with verified climate projects
             worldwide. Donations go directly on-chain — no banks, no delays, no
             fees swallowed by middlemen.
@@ -292,7 +292,7 @@ export default function Home({ publicKey, onConnect }: HomeProps) {
                 <h3 className="font-display font-semibold text-forest-900 mb-2 text-base">
                   {f.title}
                 </h3>
-                <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm leading-relaxed font-body">
+                <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm leading-relaxed font-body">
                   {f.desc}
                 </p>
               </div>
@@ -337,7 +337,7 @@ export default function Home({ publicKey, onConnect }: HomeProps) {
           <h2 className="font-display text-3xl font-bold text-forest-900 mb-4">
             Earn Impact Badges
           </h2>
-          <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] max-w-xl mx-auto mb-8 font-body">
+          <p className="text-[var(--text-secondary)] dark:text-forest-300 max-w-xl mx-auto mb-8 font-body">
             As you donate more, you unlock on-chain badges recorded on the
             Stellar blockchain. Show your commitment to the planet.
           </p>
@@ -353,7 +353,7 @@ export default function Home({ publicKey, onConnect }: HomeProps) {
                 <p className="font-display font-semibold text-forest-900 text-sm">
                   {b.name}
                 </p>
-                <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+                <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 font-body">
                   {b.threshold}
                 </p>
               </div>
@@ -563,7 +563,7 @@ function FeaturedProjectCard({ project }: { project: ClimateProject }) {
             <h3 className="font-display text-2xl font-bold text-forest-900 mb-2">
               {project.name}
             </h3>
-            <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm leading-relaxed font-body mb-4 line-clamp-3">
+            <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm leading-relaxed font-body mb-4 line-clamp-3">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-4 text-sm mb-5">
@@ -573,7 +573,7 @@ function FeaturedProjectCard({ project }: { project: ClimateProject }) {
               <span className="flex items-center gap-1 text-forest-700 font-body">
                 ♻️ <strong>{formatCO2(project.co2OffsetKg)}</strong> offset
               </span>
-              <span className="flex items-center gap-1 text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+              <span className="flex items-center gap-1 text-[var(--text-secondary)] dark:text-forest-300 font-body">
                 📍 {project.location}
               </span>
             </div>
@@ -583,7 +583,7 @@ function FeaturedProjectCard({ project }: { project: ClimateProject }) {
                 <span className="font-semibold text-forest-700">
                   {formatXLM(project.raisedXLM)} raised
                 </span>
-                <span className="text-[var(--text-secondary)] dark:text-[#8aaa8a]">
+                <span className="text-[var(--text-secondary)] dark:text-forest-300">
                   {pct}% of {formatXLM(project.goalXLM)}
                 </span>
               </div>

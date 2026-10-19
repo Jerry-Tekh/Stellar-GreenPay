@@ -4,12 +4,6 @@
 @config "../tailwind.config.ts";
 
 /* Ensure WCAG AA contrast ratios in light theme */
-.text-forest-500 { color: #1d5e31 !important; }
-.text-forest-600 { color: #1a5a2c !important; }
-.text-forest-700 { color: #144521 !important; }
-.text-forest-800 { color: #0e3018 !important; }
-.text-forest-900 { color: #081a0c !important; }
-
 
 @layer base {
   /* ── Light theme (default) ───────────────────────────────────────── */
@@ -27,6 +21,16 @@
     --text-secondary: #486848;
     --text-tertiary: #527252;
     --subtle: #c8dfc8;
+    --forest-50-rgb: 240, 247, 240;
+    --forest-100-rgb: 232, 243, 232;
+    --forest-200-rgb: 200, 223, 200;
+    --forest-300-rgb: 157, 196, 157;
+    --forest-400-rgb: 76, 175, 112;
+    --forest-500-rgb: 29, 94, 49;
+    --forest-600-rgb: 26, 90, 44;
+    --forest-700-rgb: 20, 69, 33;
+    --forest-800-rgb: 14, 48, 24;
+    --forest-900-rgb: 8, 26, 12;
   }
 
   /* ── Dark theme (toggled via `.dark` class on <html>) ─────────────── */
@@ -44,6 +48,16 @@
     --text-secondary: #8aaa8a;
     --text-tertiary: #8aaa8a;
     --subtle: #24472f;
+    --forest-50-rgb: 13, 35, 19;
+    --forest-100-rgb: 20, 55, 28;
+    --forest-200-rgb: 30, 75, 40;
+    --forest-300-rgb: 45, 95, 55;
+    --forest-400-rgb: 65, 115, 70;
+    --forest-500-rgb: 90, 140, 90;
+    --forest-600-rgb: 110, 160, 110;
+    --forest-700-rgb: 140, 185, 140;
+    --forest-800-rgb: 170, 205, 170;
+    --forest-900-rgb: 200, 230, 200;
   }
 
   * {
@@ -453,16 +467,6 @@
 .dark .bg-forest-200 { background-color: #1a3a1a; }
 
 /* Text colors */
-.dark .text-forest-50 { color: #e8f3e8 !important; }
-.dark .text-forest-100 { color: #6a8a6a !important; }
-.dark .text-forest-200 { color: #aac0aa !important; }
-.dark .text-forest-300 { color: #8aaa8a !important; }
-.dark .text-forest-400 { color: #6a8a6a !important; }
-.dark .text-forest-500 { color: #4caf70 !important; }
-.dark .text-forest-600 { color: #4caf70 !important; }
-.dark .text-forest-700 { color: #66bb6a !important; }
-.dark .text-forest-800 { color: #81c784 !important; }
-.dark .text-forest-900 { color: #c8dfc8 !important; }
 
 /* Dark-mode text contrast fixes for WCAG AA (4.5:1 normal text) */
 .dark .text-zinc-600 { color: #a8a29e; }

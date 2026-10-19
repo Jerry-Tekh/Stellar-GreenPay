@@ -95,7 +95,7 @@ function StatCard({
       <p className="font-display text-2xl font-semibold text-[#227239]">
         {value}
       </p>
-      {sub && <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">{sub}</p>}
+      {sub && <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 font-body">{sub}</p>}
     </div>
   );
 }
@@ -112,7 +112,7 @@ function DonationRow({ donation }: { donation: Donation }) {
           Project {shortenKey(donation.projectId)}
         </span>
         {donation.message && (
-          <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] italic truncate max-w-[200px] sm:max-w-sm">
+          <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 italic truncate max-w-[200px] sm:max-w-sm">
             &quot;{donation.message}&quot;
           </p>
         )}
@@ -121,7 +121,7 @@ function DonationRow({ donation }: { donation: Donation }) {
         <span className="font-semibold text-[#227239] font-body text-sm">
           {currency === "XLM" ? formatXLM(amount) : `${formatAmount(parseFloat(amount))} ${currency}`}
         </span>
-        <span className="text-[10px] text-[var(--text-secondary)] dark:text-[#8aaa8a]">
+        <span className="text-[10px] text-[var(--text-secondary)] dark:text-forest-300">
           {formatDate(donation.createdAt)}
         </span>
       </div>
@@ -139,7 +139,7 @@ function ProfileNotFound({ publicKey }: { publicKey: string }) {
         <h1 className="font-display text-2xl font-semibold text-[#1a2e1a] mb-2">
           Profile not set up yet
         </h1>
-        <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body max-w-sm mx-auto text-sm leading-relaxed">
+        <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body max-w-sm mx-auto text-sm leading-relaxed">
           The donor at{" "}
           <span className="address-tag">{shortenKey(publicKey)}</span> hasn&apos;t
           created a public profile yet.
@@ -594,7 +594,7 @@ export default function DonorProfilePage() {
             </div>
 
             {profile.bio && (
-              <p className="mt-4 text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body leading-relaxed border-t border-[rgba(34,114,57,0.08)] pt-4">
+              <p className="mt-4 text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body leading-relaxed border-t border-[rgba(34,114,57,0.08)] pt-4">
                 {profile.bio}
               </p>
             )}
@@ -636,13 +636,13 @@ export default function DonorProfilePage() {
             <div className="flex items-baseline justify-between gap-3 mb-1">
               <h2 className="label">Recent Donations</h2>
               {totalDonations > 0 && (
-                <span className="text-xs font-body text-[#5a7a5a] dark:text-[#8aaa8a]">
+                <span className="text-xs font-body text-[#5a7a5a] dark:text-forest-300">
                   Showing {donations.length} of {totalDonations} donations
                 </span>
               )}
             </div>
             {donations.length === 0 ? (
-              <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] py-4 text-center font-body">
+              <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 py-4 text-center font-body">
                 No donations recorded yet.
               </p>
             ) : (
