@@ -74,7 +74,7 @@ export default function AdminVerifications({ publicKey, onConnect }: AdminVerifi
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
         <div className="text-center mb-10">
           <h1 className="font-display text-3xl font-bold text-forest-900 mb-3">Admin Verifications</h1>
-          <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">Connect your wallet to manage verification requests.</p>
+          <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body">Connect your wallet to manage verification requests.</p>
         </div>
         <WalletConnect onConnect={onConnect} />
       </div>
@@ -86,7 +86,7 @@ export default function AdminVerifications({ publicKey, onConnect }: AdminVerifi
       <div className="mb-8">
         <p className="text-xs tracking-[0.22em] uppercase text-[var(--text-tertiary)] dark:text-forest-300 font-body">Admin</p>
         <h1 className="font-display text-3xl font-bold text-forest-900 mb-1">Verification Queue</h1>
-        <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+        <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
           Review pending and in-review organization requests.
         </p>
       </div>

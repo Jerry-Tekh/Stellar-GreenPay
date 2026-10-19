@@ -27,7 +27,7 @@ export default function ProjectUpdatesFeed({
         {t("project.projectUpdates")}
       </h2>
       {updates.length === 0 ? (
-        <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+        <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
           {t("project.noUpdatesYet")}
         </p>
       ) : (
@@ -48,7 +48,7 @@ export default function ProjectUpdatesFeed({
                   </span>
                 </div>
                 <div
-                  className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm leading-relaxed font-body prose prose-sm max-w-none"
+                  className="text-[var(--text-secondary)] dark:text-forest-300 text-sm leading-relaxed font-body prose prose-sm max-w-none"
                   dangerouslySetInnerHTML={{ __html: renderMarkdown(u.body) }}
                 />
                 <div className="flex items-center gap-3 mt-2">

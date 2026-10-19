@@ -88,7 +88,7 @@ export default function ImpactCertificate(props: {
 
       <div className="px-8 py-8">
         <div className="text-center mb-8">
-          <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">Presented to</p>
+          <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">Presented to</p>
           <p className="font-display text-3xl font-bold text-forest-900 mt-2">
             {donorName?.trim() ? donorName : shortenAddress(donorAddress)}
           </p>
@@ -132,7 +132,7 @@ export default function ImpactCertificate(props: {
             Projects Supported
           </h3>
           {projectsSupported.length === 0 ? (
-            <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+            <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
               Your supported projects will appear here after your first donation.
             </p>
           ) : (
@@ -146,7 +146,7 @@ export default function ImpactCertificate(props: {
             </ul>
           )}
           {projectsSupported.length > 8 && (
-            <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] mt-2 font-body">
+            <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 mt-2 font-body">
               +{projectsSupported.length - 8} more
             </p>
           )}

@@ -42,7 +42,7 @@ export default function FreelancerProfilePage() {
 
   if (!router.isReady || loading) {
     return (
-      <div className="max-w-2xl mx-auto px-4 py-16 text-center text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+      <div className="max-w-2xl mx-auto px-4 py-16 text-center text-[var(--text-secondary)] dark:text-forest-300 font-body">
         Loading profile…
       </div>
     );
@@ -60,7 +60,7 @@ export default function FreelancerProfilePage() {
             <h1 className="font-display text-xl font-bold text-forest-900 mb-2">
               Profile not found
             </h1>
-            <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-6">
+            <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body mb-6">
               No freelancer profile exists for this address.
             </p>
             <Link href="/jobs" className="btn-primary inline-block">
@@ -108,7 +108,7 @@ export default function FreelancerProfilePage() {
 
           {/* Bio */}
           {profile.bio && (
-            <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body whitespace-pre-wrap">
+            <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body whitespace-pre-wrap">
               {profile.bio}
             </p>
           )}
@@ -129,7 +129,7 @@ export default function FreelancerProfilePage() {
               </dt>
               <dd className="text-2xl font-bold text-forest-900">
                 {profile.totalEarnedXLM}{" "}
-                <span className="text-sm font-normal text-[var(--text-secondary)] dark:text-[#8aaa8a]">XLM</span>
+                <span className="text-sm font-normal text-[var(--text-secondary)] dark:text-forest-300">XLM</span>
               </dd>
             </div>
           </dl>

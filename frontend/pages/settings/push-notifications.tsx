@@ -25,7 +25,7 @@ function ToggleRow({ label, description, checked, onChange }: ToggleRowProps) {
     <div className="flex items-start justify-between gap-4 py-4">
       <div className="flex-1 min-w-0">
         <p className="text-sm font-semibold text-forest-900 font-body">{label}</p>
-        <p className="text-xs text-[#5a7a5a] dark:text-[#8aaa8a] font-body mt-0.5">{description}</p>
+        <p className="text-xs text-[#5a7a5a] dark:text-forest-300 font-body mt-0.5">{description}</p>
       </div>
       <button
         role="switch"
@@ -92,7 +92,7 @@ export default function PushNotificationSettings() {
         <h1 className="font-display text-2xl font-bold text-forest-900 mb-1">
           Push Notification Settings
         </h1>
-        <p className="text-sm text-[#5a7a5a] dark:text-[#8aaa8a] font-body mb-8">
+        <p className="text-sm text-[#5a7a5a] dark:text-forest-300 font-body mb-8">
           Choose which push notifications you receive from the GreenPay mobile app.
         </p>
 

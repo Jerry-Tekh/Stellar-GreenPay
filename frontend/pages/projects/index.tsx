@@ -160,7 +160,7 @@ export default function ProjectsPage() {
           <h1 className="font-display text-3xl font-bold text-forest-900 mb-1">
             Climate Projects
           </h1>
-          <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm font-body">
+          <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm font-body">
             {loading
               ? "Loading..."
               : `${projects.length} verified project${projects.length !== 1 ? "s" : ""}`}
@@ -299,7 +299,7 @@ export default function ProjectsPage() {
                     "w-full text-left px-3 py-2 rounded-lg text-sm transition-colors font-body",
                     status === val
                       ? "bg-forest-100 text-forest-700 font-semibold"
-                      : "text-[var(--text-secondary)] dark:text-[#8aaa8a] hover:bg-forest-50 hover:text-forest-700",
+                      : "text-[var(--text-secondary)] dark:text-forest-300 hover:bg-forest-50 hover:text-forest-700",
                   )}
                 >
                   {lab}
@@ -316,7 +316,7 @@ export default function ProjectsPage() {
                 "w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors font-body",
                 verified
                   ? "bg-forest-100 text-forest-700"
-                  : "text-[var(--text-secondary)] dark:text-[#8aaa8a] hover:bg-forest-50 hover:text-forest-700",
+                  : "text-[var(--text-secondary)] dark:text-forest-300 hover:bg-forest-50 hover:text-forest-700",
               )}
             >
               {/* Toggle Switch */}
@@ -351,7 +351,7 @@ export default function ProjectsPage() {
                   "w-full text-left px-3 py-2 rounded-lg text-sm transition-colors font-body",
                   !category
                     ? "bg-forest-100 text-forest-700 font-semibold"
-                    : "text-[var(--text-secondary)] dark:text-[#8aaa8a] hover:bg-forest-50 hover:text-forest-700",
+                    : "text-[var(--text-secondary)] dark:text-forest-300 hover:bg-forest-50 hover:text-forest-700",
                 )}
               >
                 All Categories
@@ -364,7 +364,7 @@ export default function ProjectsPage() {
                     "w-full text-left px-3 py-2 rounded-lg text-sm transition-colors font-body flex items-center gap-2",
                     category === cat
                       ? "bg-forest-100 text-forest-700 font-semibold"
-                      : "text-[var(--text-secondary)] dark:text-[#8aaa8a] hover:bg-forest-50 hover:text-forest-700",
+                      : "text-[var(--text-secondary)] dark:text-forest-300 hover:bg-forest-50 hover:text-forest-700",
                   )}
                 >
                   <span>{CATEGORY_ICONS[cat]}</span>
@@ -404,7 +404,7 @@ export default function ProjectsPage() {
               <p className="font-display text-xl text-forest-900 mb-2">
                 {search ? `No results for "${search}"` : "No projects found"}
               </p>
-              <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm font-body">
+              <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm font-body">
                 {search
                   ? "Try a different search"
                   : "Try adjusting your filters"}

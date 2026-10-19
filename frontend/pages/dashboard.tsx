@@ -140,7 +140,7 @@ export default function Dashboard({ publicKey, onConnect }: DashboardProps) {
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
       <div className="text-center mb-10">
         <h1 className="font-display text-3xl font-bold text-forest-900 mb-3">My Impact</h1>
-        <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">Connect your wallet to see your donation history and impact</p>
+        <p className="text-[var(--text-secondary)] dark:text-forest-300 font-body">Connect your wallet to see your donation history and impact</p>
       </div>
       <WalletConnect onConnect={onConnect} />
     </div>
@@ -416,7 +416,7 @@ export default function Dashboard({ publicKey, onConnect }: DashboardProps) {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div>
                 <h2 className="font-display text-xl font-bold text-forest-900">Your Impact Certificate</h2>
-                <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mt-1">
+                <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body mt-1">
                   Download a PDF-ready certificate or share it on social media.
                 </p>
               </div>
@@ -523,7 +523,7 @@ export default function Dashboard({ publicKey, onConnect }: DashboardProps) {
                     </div>
                     <div>
                       <p className="font-semibold text-forest-900 font-body">{myTeam.name}</p>
-                      <p className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body">
+                      <p className="text-xs text-forest-300 font-body">
                         👥 {myTeam.memberCount} member{myTeam.memberCount === 1 ? "" : "s"}
                       </p>
                     </div>
@@ -533,20 +533,20 @@ export default function Dashboard({ publicKey, onConnect }: DashboardProps) {
                   </Link>
                 </div>
                 <div className="mt-4 p-4 rounded-xl bg-forest-50 border border-forest-100 text-center">
-                  <p className="text-[#5a7a5a] dark:text-[#8aaa8a] text-xs font-body uppercase tracking-wider font-bold mb-1">
+                  <p className="text-[#5a7a5a] dark:text-forest-300 text-xs font-body uppercase tracking-wider font-bold mb-1">
                     Your team has donated
                   </p>
                   <p className="font-display text-2xl font-bold text-forest-900">
                     {formatXLM(myTeam.totalDonatedXLM)} XLM
                   </p>
-                  <p className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body mt-1">
+                  <p className="text-xs text-forest-300 font-body mt-1">
                     ≈ {formatCO2(Number(myTeam.totalCO2OffsetKg || 0))} CO₂ offset combined
                   </p>
                 </div>
               </div>
             ) : teamForm === "none" ? (
               <div>
-                <p className="text-sm text-[#5a7a5a] dark:text-[#8aaa8a] font-body mb-4">
+                <p className="text-sm text-[#5a7a5a] dark:text-forest-300 font-body mb-4">
                   Give as a team — combine your company&apos;s or group&apos;s donations under one profile and climb the team leaderboard together.
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -704,7 +704,7 @@ export default function Dashboard({ publicKey, onConnect }: DashboardProps) {
             ) : donations.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-4xl mb-3">🌱</p>
-                <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] mb-4 font-body">No donations yet</p>
+                <p className="text-[var(--text-secondary)] dark:text-forest-300 mb-4 font-body">No donations yet</p>
                 <Link href="/projects" className="btn-primary text-sm">Browse Projects →</Link>
               </div>
             ) : (
@@ -714,7 +714,7 @@ export default function Dashboard({ publicKey, onConnect }: DashboardProps) {
                     <div className="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center text-lg flex-shrink-0">🌱</div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-semibold text-forest-900 font-body">Project donation</p>
-                      {d.message && <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] italic font-body truncate">&quot;{d.message}&quot;</p>}
+                      {d.message && <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 italic font-body truncate">&quot;{d.message}&quot;</p>}
                       <p className="text-[10px] text-[var(--text-tertiary)] dark:text-forest-300 font-body uppercase tracking-wider font-bold opacity-70">{timeAgo(d.createdAt)}</p>
                     </div>
                     <div className="text-right flex-shrink-0">
@@ -736,7 +736,7 @@ export default function Dashboard({ publicKey, onConnect }: DashboardProps) {
             <div className="card text-center py-20">
               <p className="text-5xl mb-4">❤️</p>
               <h2 className="text-xl font-display font-bold text-forest-900 mb-2">No saved projects yet</h2>
-              <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] mb-8 font-body">Save projects you&apos;re interested in to track their progress.</p>
+              <p className="text-[var(--text-secondary)] dark:text-forest-300 mb-8 font-body">Save projects you&apos;re interested in to track their progress.</p>
               <Link href="/projects" className="btn-primary text-sm">Explore Projects</Link>
             </div>
           ) : (

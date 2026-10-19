@@ -65,7 +65,7 @@ export default function ProjectCampaigns({
                     Completed
                   </span>
                 </div>
-                <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-2">
+                <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 font-body mb-2">
                   Ended {formatDate(campaign.deadline)}
                 </p>
                 <div className="flex justify-between text-xs mb-1 font-body">
@@ -92,7 +92,7 @@ export default function ProjectCampaigns({
         <h2 className="font-display text-lg font-semibold text-forest-900 mb-2">
           Campaign Creator
         </h2>
-        <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-4">
+        <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 font-body mb-4">
           Project admins can launch a time-limited campaign with a custom goal and deadline.
         </p>
         <form onSubmit={handleCreateCampaign} className="space-y-3">

@@ -23,7 +23,7 @@ export default function ProjectShareCard({
       <p className="font-display font-semibold text-forest-900 mb-2">
         Spread the word 🌍
       </p>
-      <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] mb-3 font-body">
+      <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 mb-3 font-body">
         Share this project with friends and family to increase its impact.
       </p>
 

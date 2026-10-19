@@ -28,7 +28,7 @@ export default function ProjectImpactCalculator({
       <h3 className="font-display font-semibold text-forest-900 mb-2">
         Impact Calculator
       </h3>
-      <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] mb-3 font-body">
+      <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 mb-3 font-body">
         See what your donation can achieve before you give.
       </p>
 

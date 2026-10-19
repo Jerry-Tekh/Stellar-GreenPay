@@ -23,16 +23,16 @@ export default function ProjectDiscussion({
           On-chain memos
         </span>
       </div>
-      <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mb-4">
+      <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 font-body mb-4">
         Discuss by donating — messages are Stellar transaction memos from real donations.
       </p>
 
       {loading ? (
-        <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+        <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
           Loading discussion…
         </p>
       ) : discussion.length === 0 ? (
-        <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+        <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
           No memo messages yet. Be the first to leave a message with your donation.
         </p>
       ) : (

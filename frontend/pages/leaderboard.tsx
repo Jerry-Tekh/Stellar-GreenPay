@@ -27,7 +27,7 @@ export default function LeaderboardPage() {
         <h1 className="font-display text-3xl sm:text-4xl font-bold text-forest-900 mb-3">
           Top Climate Donors
         </h1>
-        <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] max-w-xl mx-auto font-body leading-relaxed">
+        <p className="text-[var(--text-secondary)] dark:text-forest-300 max-w-xl mx-auto font-body leading-relaxed">
           Celebrating the community members who are driving the most impact. Every XLM donated is recorded permanently on the Stellar blockchain.
         </p>
       </div>
@@ -67,7 +67,7 @@ export default function LeaderboardPage() {
                 <div key={b.name} className="bg-white rounded-xl p-3 border border-forest-100">
                   <p className="text-2xl mb-1">{b.emoji}</p>
                   <p className="text-xs font-semibold text-forest-900 font-body">{b.name}</p>
-                  <p className="text-xs text-[#8aaa8a] dark:text-forest-300 font-body">{b.req}</p>
+                  <p className="text-xs text-forest-300 font-body">{b.req}</p>
                 </div>
               ))}
             </div>
@@ -102,7 +102,7 @@ export default function LeaderboardPage() {
 
       {board === "teams" && (
         <>
-          <p className="text-center text-sm text-[#5a7a5a] dark:text-[#8aaa8a] font-body mb-6">
+          <p className="text-center text-sm text-[#5a7a5a] dark:text-forest-300 font-body mb-6">
             Businesses and groups giving as one — combined totals across every team member&apos;s wallet.
           </p>
           <TeamsLeaderboard period={period} />
@@ -110,7 +110,7 @@ export default function LeaderboardPage() {
       )}
 
       <div className="mt-10 text-center">
-        <p className="text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm mb-4 font-body">Want to see your name here?</p>
+        <p className="text-[var(--text-secondary)] dark:text-forest-300 text-sm mb-4 font-body">Want to see your name here?</p>
         <Link href="/projects" className="btn-primary">🌱 Start Donating</Link>
         <div className="mt-4">
           <Link href="/leaderboard/history" className="text-forest-600 text-sm underline">

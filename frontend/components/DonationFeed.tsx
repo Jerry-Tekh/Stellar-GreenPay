@@ -213,7 +213,7 @@ export default function DonationFeed({ projectId, walletAddress, refreshKey = 0,
   if (donations.length === 0) return (
     <div>
       {renderLiveStatus("Listening for live donations…", "mb-3")}
-      <p className="text-center text-[var(--text-secondary)] dark:text-[#8aaa8a] text-sm py-6 font-body">No donations yet — be the first! 🌱</p>
+      <p className="text-center text-[var(--text-secondary)] dark:text-forest-300 text-sm py-6 font-body">No donations yet — be the first! 🌱</p>
     </div>
   );
 
@@ -249,7 +249,7 @@ export default function DonationFeed({ projectId, walletAddress, refreshKey = 0,
                 </span>
               )}
             </div>
-            {d.message && <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] mt-0.5 italic font-body">&quot;{d.message}&quot;</p>}
+            {d.message && <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 mt-0.5 italic font-body">&quot;{d.message}&quot;</p>}
             <div className="flex items-center gap-2 mt-1">
               <span className="text-xs text-[var(--text-tertiary)] dark:text-forest-300 font-body">{timeAgo(d.createdAt)}</span>
               <a href={explorerUrl(d.transactionHash)} target="_blank" rel="noopener noreferrer"

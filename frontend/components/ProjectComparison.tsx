@@ -139,7 +139,7 @@ export default function ProjectComparison({
         {activeProjects.length === 0 ? (
           <div className="text-center py-12">
             <p className="font-display text-lg text-forest-900 mb-2">No projects to compare</p>
-            <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] mb-6">
+            <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 mb-6">
               All projects have been removed from the comparison.
             </p>
             {onAddProject ? (
@@ -193,7 +193,7 @@ export default function ProjectComparison({
                             <p className="font-display text-sm font-semibold text-forest-900 break-words">
                               {project.name}
                             </p>
-                            <p className="text-xs text-[var(--text-secondary)] dark:text-[#8aaa8a] mt-1 font-body">
+                            <p className="text-xs text-[var(--text-secondary)] dark:text-forest-300 mt-1 font-body">
                               {project.category}
                             </p>
                           </div>
@@ -225,7 +225,7 @@ export default function ProjectComparison({
                   <tr key={row.key} className="border-t border-forest-100">
                     <th
                       scope="row"
-                      className="w-[150px] min-w-[150px] p-3 font-body text-sm font-medium text-[var(--text-secondary)] dark:text-[#8aaa8a] align-middle"
+                      className="w-[150px] min-w-[150px] p-3 font-body text-sm font-medium text-[var(--text-secondary)] dark:text-forest-300 align-middle"
                     >
                       {row.label}
                     </th>
@@ -261,7 +261,7 @@ export default function ProjectComparison({
                 <tr className="border-t border-forest-100">
                   <th
                     scope="row"
-                    className="w-[150px] min-w-[150px] p-3 font-body text-sm font-medium text-[var(--text-secondary)] dark:text-[#8aaa8a] align-middle"
+                    className="w-[150px] min-w-[150px] p-3 font-body text-sm font-medium text-[var(--text-secondary)] dark:text-forest-300 align-middle"
                   >
                     Action
                   </th>

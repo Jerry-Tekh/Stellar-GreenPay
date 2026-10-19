@@ -19,7 +19,7 @@ export default function ContributorTimeline({
         <p className="font-display text-lg text-forest-900 mb-1">
           No merged contributions yet
         </p>
-        <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body">
+        <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body">
           Merged pull requests will appear here as contributors ship features.
         </p>
       </div>
@@ -71,7 +71,7 @@ export default function ContributorTimeline({
                       >
                         {pr.title}
                       </a>
-                      <p className="text-sm text-[var(--text-secondary)] dark:text-[#8aaa8a] font-body mt-1">
+                      <p className="text-sm text-[var(--text-secondary)] dark:text-forest-300 font-body mt-1">
                         by{" "}
                         <a
                           href={pr.author.htmlUrl}
